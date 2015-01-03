@@ -1,0 +1,23 @@
+---
+
+- name: Install the common packages
+  apt: name={{ item }} update_cache=yes cache_valid_time=7200 state=present
+  with_items:
+   - htop
+   - vim
+   - iftop
+   - iotop
+   - ngrep
+   - tree
+   - curl
+   - ssh
+   - unzip
+   - git
+   - acl
+   - catdoc
+
+- name: Copy the bashrc files
+  template: src=.bashrc.j2 dest=/root/.bashrc
+
+- name: Copy the vim configuration
+  copy: src=.vimrc dest=/root/.vimrc
