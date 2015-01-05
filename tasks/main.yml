@@ -15,9 +15,12 @@
    - git
    - acl
    - catdoc
+  tags: common
 
 - name: Copy the bashrc files
   template: src=.bashrc.j2 dest=/root/.bashrc
+  tags: common
 
 - name: Copy the vim configuration
   copy: src=.vimrc dest=/root/.vimrc
+  tags: common
