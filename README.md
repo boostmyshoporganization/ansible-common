@@ -19,4 +19,6 @@ Configuration
 ```yaml
 common:
   environment: dev
+  additional_packages:
+    - vpnc
 ```

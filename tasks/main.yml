@@ -11,10 +11,14 @@
    - tree
    - curl
    - ssh
-   - unzip
    - git
    - acl
    - catdoc
+  tags: common
+
+- name: Install the additional packages
+  apt: name={{ item }} state=present
+  with_items: common.additional_packages
   tags: common
 
 - name: Copy the bashrc files
