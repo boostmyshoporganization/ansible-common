@@ -9,4 +9,4 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias vi='vim'
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[31m\][{{ common.environment }}][\t] \[\033[31m\]\u\[\033[00m\]@\[\033[32m\]\h:\W\[\033[00m\]$ '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[{{ common.prompt_color }}m\][{{ common.environment }}][\t] \[\033[31m\]\u\[\033[00m\]@\[\033[32m\]\h:\W\[\033[00m\]$ '

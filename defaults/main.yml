@@ -1,0 +1,5 @@
+---
+
+common:
+  environment: prod
+  prompt_color: 31

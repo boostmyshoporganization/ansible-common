@@ -19,6 +19,7 @@ Configuration
 ```yaml
 common:
   environment: dev
+  prompt_color: 31
   additional_packages:
     - vpnc
 ```
